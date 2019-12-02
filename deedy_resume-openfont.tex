@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy-Edit - A fork of Deedy-Resume (v1.2)
+% LaTeX Template
+% Version 1.0 (16/8/2019)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% Edited by:
+% Gabriel Ong (http://q-gabe.me)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.0:
+% 1. Initial Upload
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper]{deedy-resume-openfont} % For US Letter, change 'a4paper' to 'letterpaper'
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{tikz}
+\pagestyle{fancy}
+\fancyhf{}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+			\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{John}{Smith} % {First Name} {Last Name}
+{
+\circled{\faChrome}	{\fontsize{10}{10}\selectfont \urlstyle{same}\href{https://example.com}{example.com}} % Personal Website
+}
+{
+\circled{\faEnvelope}	{\fontsize{10}{10}\selectfont \href{mailto:email@example.com}{email@example.com}} % Email
+{\fontsize{8}{8}\selectfont \\ (Preferred)}
+}
+{
+\circled{\faGithub}	{\fontsize{10}{10}\selectfont \href{https://github.com/}{Username}} % Github Profile
+}
+{
+\circled{\faPhone}	{\fontsize{10}{10}\selectfont +1\ 234\ 567\ 8910} % Contact Number
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.34\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\subsection{University of Maryland}
+\descript{Master of Computer Science}
+\location{2014 | Maryland}
+Department of Computer Science \\
+\location{ Summa Cum Laude }
+\sectionsep
+
+\subsection{University of Maryland}
+\descript{Bachelor of Computer Science}
+\location{2012 | Maryland}
+Department of Computer Science \\
+\location{ Summa Cum Laude }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   C \textbullet{} Python \\
+\location{Over 1000 lines:}
+Javascript \textbullet{} C\# \textbullet{} HTML5 \\
+CSS \textbullet{} PHP \\
+\location{Familiar:}
+Shell \textbullet{} C++ \textbullet{} Assembly \\ 
+Ruby \textbullet{} \LaTeX\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Post-Grad}
+Software Testing \\
+Computer Graphics \\
+{\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+AI and Machine Learning \\
+Human-Computer Interface Applications \\
+\sectionsep
+
+\subsection{Undergraduate}
+Data Structures and Algorithms \\
+{\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+Software Engineering \\
+Programming Methodology \\
+{\footnotesize \textit{\textbf{(C \& Java) }}} \\
+Computer Networks \\
+{\footnotesize \textit{\textbf{(Teaching Assistant) }}} \\
+Operating Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Contact} 
+Email: \href{mailto:email@example.com}{\bf email@example.com} \\
+Contact: {\bf +1\ 234\ 567\ 8910}  \\
+Website: \href{https://example.com}{\bf example.com} \\
+Github: \href{https://github.com/}{\bf github.com/<Username>} \\
+LinkedIn:  \href{ https://linkedin.com/johnutw}{\bf linkedin.com/johnutw} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\begin{minipage}[t]{0.60\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROFESSIONAL EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Professional Experience}
+\runsubsection{Facebook}
+\descript{| Software Engineer }
+\location{May 2017 - Present }
+\vspace{10pt} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Contributed software engineering expertise in the development of products through the software lifecycle, from requirements definition through successful deployment.
+\item Facilitated adoption of emerging software application and architecture standards, by managing a team of 5 developers.
+\item Excelled at rapid application development and management of technological issues for assigned projects, earning the highest customer satisfaction rating for all software solutions delivered.
+\item {\fontsize{10}{10}\selectfont\bfseries Key achievement:} Provided an object-oriented (OOS) design for the leading project-management platforms within Facebook.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Airbnb}
+\descript{| Web Developer }
+\location{July 2014 - May 2017 }
+\begin{tightemize}
+\item Structured several internal systems comprising order entry/management tools, conversion/revenue reporting, and production workflow tracking.
+\item Designed custom REST APIs built in Python, Laravel PHP, and NodeJS.
+\item Successfully installed Linux servers and virtualized environment using Docker, Hyper-V and Amazon Web Services.
+\item Designed and implemented PHP web application, streamlining high-server traffic resource configuration and allocation.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{iOS Meme Application}
+\descript{MemeIt}
+\location{ 2018 | < Sample Link 1 > }
+\begin{tightemize}
+\item Developed an iOS application that allows users to easily create and share memes.
+\item Integrated openCV library allowing users to effortlessly apply photo filters and effects.
+\item Designed RESTful backend server enabling memes to be stored persistently in an online database.
+\item Incorporated persistent data storage to archive memes. Leveraged caching for recently accessed memes.
+\item {\fontsize{10}{10}\selectfont\bfseries Utilized:} Swift, Obj-C, Python, Flask, SQLite, openCV
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Interactive 3D-Graphics Website}
+\descript{Deep Viz}
+\location{ 2016 | < Sample Link 2 > }
+\begin{tightemize}
+\item Developed a real-time interactive graphical website using THREE.js to create a 3D workspace with real-time animated 3D models of crystal lattice structures and robotic parts in which animations and camera views can be manipulated.
+\item {\fontsize{10}{10}\selectfont\bfseries Utilized:} Python, Flask, Heroku, JS, AJAX, THREE.js, HTML/CSS, Docker, GIT
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OTHER EXPERIENCE - (UNUSED)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% \section{Other Experience}
+% \runsubsection{Armed Forces}
+% \descript{| Webmaster}
+% \location{Oct 2010 – Aug 2012 | }
+% \begin{tightemize}
+% \item Appointed as the Webmaster of the Medical Service.
+% \item Implemented additional UI features onto an intranet website to improve user experience, utilising HTML5 and CSS knowledge.
+% \item Involved in content maintenance and debugging of the website.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH - (UNUSED)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Research}
+%\runsubsection{Cornell Robot Learning Lab}
+%\descript{| Researcher}
+%\location{Jan 2014 – Jan 2015 | Ithaca, NY}
+%Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+%\sectionsep
+%
+%\runsubsection{Cornell Phonetics Lab}
+%\descript{| Head Undergraduate Researcher}
+%\location{Mar 2012 – May 2013 | Ithaca, NY}
+%Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS - (UNUSED)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS - (UNUSED)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+%
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
