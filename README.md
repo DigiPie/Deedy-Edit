@@ -29,10 +29,6 @@ Despite the rising popularity of single-page resumes amongst both recruiters and
  1. Compiles only with **XeTeX**. (Use **XeLaTeX** if you are using MacTex)
  2. Requires the **OpenType font-awesome ('FontAwesome.otf')** from [**fontawesome-LaTeX package**](https://github.com/xdanaux/fontawesome-latex).
 
-## Changelog
-### v1.0
- 1. Initial Upload.
-
 ## License
     Copyright 2014 Debarghya Das
 
