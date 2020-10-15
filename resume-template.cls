@@ -35,58 +35,32 @@
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
 \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
+Last updated on \today
 \end{textblock}}
 
 % Name command
-\newcommand{\namesection}[6]{
-\begin{minipage}[t][2.8cm][t]{.45\textwidth}
-\vspace{18pt}
-\raggedright{
+\newcommand{\namesection}[3]{
+\ \\
+\vspace{5pt}
+\centering{
 \fontsize{40pt}{60pt}
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #1 
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #2
+\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #2
 } \\[5pt]
-\end{minipage}
-% Personal Website & Email
-\begin{minipage}[t][2.5cm][t]{.27\textwidth}
-\vspace{13pt}
+\centering{
 \color{headings}
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{12pt}\selectfont #3
-\vspace{6pt} \\ #4
-\end{minipage}
-% Github & Personal Number
-\begin{minipage}[t][2.5cm][t]{.30\textwidth}
-\vspace{13pt}
-\color{headings}
-\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{14pt}{14pt}\selectfont #5
-\vspace{6pt} \\ #6
-\end{minipage}
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
 }
 
-%\newcommand{\namesection}[3]{
-%\centering{
-%\fontsize{40pt}{60pt}
-%\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
-%\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
-%} \\[5pt]
-%\centering{
-%\color{headings}
-%\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-%\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
-%\vspace{-15pt}
-%}
-
-% Section seperators 
+% Section separators 
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\newcommand{\sectionsep}{\vspace{6pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{16pt}{24pt}\selectfont \bfseries\raggedright\uppercase}{}{0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{14pt}{18pt}\selectfont \bfseries\raggedright\uppercase}{}{0em}{}
 
 % Subheadings command
 \titleformat{\subsection}{
@@ -97,7 +71,7 @@ Last Updated on \today
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{10pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
